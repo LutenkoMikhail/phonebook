@@ -1,4 +1,14 @@
+Установка :
+
+Выполнить команду : 
+composer update
+php artisan migrate --seed
+php artisan storage:link
+Стартовая страница :
+
+
 Тестовое задание :
+public\index.php
 
 Создать телефонную книгу, в которой есть такие операции
 

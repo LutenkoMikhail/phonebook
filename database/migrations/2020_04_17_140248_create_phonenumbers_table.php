@@ -22,7 +22,8 @@ class CreatePhonenumbersTable extends Migration
         Schema::table('phone_numbers', function (Blueprint $table) {
             $table->foreign('contact_id')
                 ->references('id')
-                ->on('contacts');
+                ->on('contacts')
+                ->onDelete('cascade');
         });
     }
 
