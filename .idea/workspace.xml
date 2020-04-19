@@ -2,11 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e4a6848-0db5-490e-abfa-2e4973012a16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PhoneNumberController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/starter-template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contact/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contact/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contact/view.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/phonenumber/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/phonenumber/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/phonenumber/view.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/sorry.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_17_140248_create_phonenumbers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_17_140248_create_phonenumbers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/PhoneNumber.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PhoneNumber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,17 +136,21 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1afdvS3euUsTwe6UpWR7mi7htuh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -145,26 +169,53 @@
       <option name="presentableId" value="Default" />
       <updated>1587130812712</updated>
       <workItem from="1587130814123" duration="2536000" />
-      <workItem from="1587203047183" duration="5076000" />
+      <workItem from="1587203047183" duration="5393000" />
+      <workItem from="1587214553730" duration="7029000" />
+      <workItem from="1587224730637" duration="2011000" />
+      <workItem from="1587226751969" duration="1332000" />
+      <workItem from="1587275526888" duration="22214000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="608" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587218656721">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="608" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587218656721" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587301006353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587301006353" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1587131345069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587131345069" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1587131409107">
+    <state x="703" y="334" key="NewPhpClassDialog" timestamp="1587289774524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587131409107" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587203053094">
+    <state x="703" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587289774524" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1587300900745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587203053094" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587300900745" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1587214591288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587214591288" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587275609289">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587275609289" />
+    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1587218670579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587218670579" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1587207542562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
