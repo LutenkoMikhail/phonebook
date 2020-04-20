@@ -4,7 +4,7 @@
     <div class="starter-template">
 
         @if(!$contacts->isEmpty())
-            <h1>All phonebook entries {{$countContacts}}</h1>
+            <h1>All phonebook entries  [{{$allContacts}}]</h1>
             <div class="row">
                 @foreach($contacts as $contact)
                     @include('card',$contact)

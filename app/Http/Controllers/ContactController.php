@@ -3,20 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
 use App\Contact;
 
 class ContactController extends Controller
 {
-    protected $maxPaginate = 6;
+    protected $maxPaginate;
+
+    public function __construct()
+    {
+        $this->maxPaginate = Config::get('constants.paginate.maxPaginate');
+    }
 
     public function index()
     {
         $contacts = Contact::paginate($this->maxPaginate);
-        $countContacts = Contact::get()->count();
 
         return view('index', [
-            'contacts' => $contacts,
-            'countContacts' => $countContacts
+            'contacts' => $contacts
         ]);
 
     }

@@ -17,12 +17,12 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="{{route('index')}}">Phone Book</a>
+            <a class="navbar-brand" href="{{route('index')}}">Phone Book : </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="{{route('index')}}">All contacts</a></li>
-                <li><a href="{{route('contact.create')}}">New contact</a></li>
+                <li class="active"><a href="{{route('index')}}">All contacts : [ {{$allContacts}}  ]</a></li>
+                <li><a href="{{route('contact.create')}}">New contact [ + ]</a></li>
             </ul>
 
         </div>

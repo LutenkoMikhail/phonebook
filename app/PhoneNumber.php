@@ -15,11 +15,8 @@ class PhoneNumber extends Model
         '_token',
     ];
 
-
     public function contact()
     {
         return $this->belongsTo(Contact::class);
     }
-
-
 }

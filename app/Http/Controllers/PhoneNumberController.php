@@ -7,6 +7,7 @@ use App\Contact;
 use App\PhoneNumber;
 use Illuminate\Http\Request;
 
+
 class PhoneNumberController extends Controller
 {
 
@@ -18,7 +19,7 @@ class PhoneNumberController extends Controller
     public function store(Request $request, int $id)
     {
         $request->validate([
-            'phone_number' => ['required', 'string', 'min:3 | max:100'],
+            'phone_number' => 'required|unique:phone_numbers|alpha_num|min:3|max:100',
         ]);
 
         $phoneNumber = new PhoneNumber($request->except('_token'));
@@ -44,7 +45,7 @@ class PhoneNumberController extends Controller
     public function update(Request $request, int $phoneNumber)
     {
         $request->validate([
-            'phone_number' => ['required', 'string', 'min:3 | max:100'],
+            'phone_number' => 'required|unique:phone_numbers|alpha_num|min:3|max:100',
         ]);
 
         $phoneNumber = PhoneNumber::find($phoneNumber);
