@@ -22,7 +22,10 @@ class Contact extends Model
         return $this->hasMany(PhoneNumber::class);
     }
 
-    public function iCanAddPhoneNumber()
+    /**
+     * Returns true if you can add a new phone number otherwise false
+     */
+    public function iCanAddPhoneNumber(): bool
     {
         if ($this->phoneNumber->count() >= $this->maxPhoneNumbers) {
             return false;

@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Contact;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -24,7 +26,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $countContacts = Contact::get()->count();
-        view()->share('allContacts', $countContacts);
+        if (Schema::hasTable('contacts')) {
+            $countContacts = Contact::get()->count();
+            view()->share('allContacts', $countContacts);
+        }
     }
 }
