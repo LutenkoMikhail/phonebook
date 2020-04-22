@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactCreateUpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use App\Contact;
@@ -39,12 +40,9 @@ class ContactController extends Controller
         return view('contact.create');
     }
 
-    public function store(Request $request)
+    public function store(ContactCreateUpdateRequest $request)
     {
-        $request->validate([
-            'name' => ['required', 'string', 'min:5 | max:50'],
-            'surname' => ['required', 'string', 'min:5 | max:50'],
-        ]);
+
 
         $contact = new Contact($request->except('_token'));
         $contact->save();
@@ -61,12 +59,9 @@ class ContactController extends Controller
         );
     }
 
-    public function update(Request $request, Contact $contact)
+    public function update(ContactCreateUpdateRequest $request, Contact $contact)
     {
-        $request->validate([
-            'name' => ['required', 'string', 'min:5 | max:50'],
-            'surname' => ['required', 'string', 'min:5 | max:50'],
-        ]);
+
         $contact->name = $request->name;
         $contact->surname = $request->surname;
         $contact->save();

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Contact;
+use App\Http\Requests\PhoneNumberCreateUpdateRequest;
 use App\PhoneNumber;
 use Illuminate\Http\Request;
 
@@ -16,11 +17,8 @@ class PhoneNumberController extends Controller
         return view('phonenumber.create');
     }
 
-    public function store(Request $request, int $id)
+    public function store(PhoneNumberCreateUpdateRequest $request, int $id)
     {
-        $request->validate([
-            'phone_number' => 'required|unique:phone_numbers|alpha_num|min:3|max:100',
-        ]);
 
         $phoneNumber = new PhoneNumber($request->except('_token'));
         $phoneNumber->contact_id = $id;
@@ -42,11 +40,8 @@ class PhoneNumberController extends Controller
         );
     }
 
-    public function update(Request $request, int $phoneNumber)
+    public function update(PhoneNumberCreateUpdateRequest $request, int $phoneNumber)
     {
-        $request->validate([
-            'phone_number' => 'required|unique:phone_numbers|alpha_num|min:3|max:100',
-        ]);
 
         $phoneNumber = PhoneNumber::find($phoneNumber);
         $phoneNumber->phone_number = $request->phone_number;

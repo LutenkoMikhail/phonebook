@@ -4,6 +4,7 @@
 composer update;
 php artisan migrate --seed;
 php artisan storage:link(при необходимости);
+Переименовать файл .env.example в файл .env и настроть подключение к базе данных
 
 Стартовая страница :
 public\index.php
