@@ -14,6 +14,7 @@
     <link href="/css/starter-template.css" rel="stylesheet">
 </head>
 <body>
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -21,13 +22,19 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="{{route('index')}}">All contacts : [ {{$allContacts}}  ]</a></li>
+                <li class="active"><a href="{{route('index')}}">All contacts : [ {{$allContacts}} ]</a></li>
                 <li><a href="{{route('contact.create')}}">New contact [ + ]</a></li>
-            </ul>
+                @if($allContacts!==0)
+                    <li><a href="{{route('db.reset')}}">Reset DataBase</a></li>
+                @endif
 
+            </ul>
         </div>
+
     </div>
+
 </nav>
+
 
 <div class="container">
     @yield('content')

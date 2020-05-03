@@ -27,3 +27,6 @@ Route::post('phonenumber/store/{contactId}', 'PhoneNumberController@store')->nam
 Route::get('phonenumber/{phonenumber}/edit', 'PhoneNumberController@edit')->name('phonenumber.edit');
 Route::post('phonenumber/{phonenumberId}', 'PhoneNumberController@update')->name('phonenumber.update');
 Route::get('phonenumber/{phonenumber}/delete', 'PhoneNumberController@delete')->name('phonenumber.delete');
+
+
+Route::get('db/reset','ResetDataBaseController@reset')->name('db.reset');
